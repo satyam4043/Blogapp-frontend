@@ -86,8 +86,10 @@ const Home = () => {
   
     
   // }
+  
 
-  return (
+return (
+  
     <div className='row m-0 p-0  mt-2'>
       <div className="col-md-2 col-sm-2 ">
         <button onClick={()=>setClicked(true)} className='btn btn-info'>Create</button>
@@ -120,7 +122,7 @@ const Home = () => {
   <button onClick={handleSubmit} type="submit" className="btn btn-primary">Submit</button>
 </form>
 
-      </div>}
+      </div>} 
     </div>
   )
 }
