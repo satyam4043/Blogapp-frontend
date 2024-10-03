@@ -16,7 +16,7 @@ export default function Profile() {
 
   let store=React.useContext(UserContext)
   let getUser=async()=>{
-    let res=await axios.get('http://localhost:8080/users/getUser',{
+    let res=await axios.get('https://blog-app-eza5.onrender.com/users/getUser',{
       headers:{
         'Authorization':store.details.token
       }
@@ -45,7 +45,7 @@ export default function Profile() {
   if(password){
     obj.password=password
   }
-  let res=await fetch(`http://localhost:8080/users/update`,{
+  let res=await fetch(`https://blog-app-eza5.onrender.com/users/update`,{
    method:"PUT",
    headers:{
     'content-type':'application/json',

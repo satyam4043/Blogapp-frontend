@@ -22,7 +22,7 @@ const YourBlog = () => {
 const [blogs, setblogs] = useState([]);
 
     let getBlogs=async()=>{
-        let res=await axios.get('http://localhost:8080/posts/getSingleUser',{
+        let res=await axios.get('https://blog-app-eza5.onrender.com/posts/getSingleUser',{
             headers:{
                 'Authorization':ctx.details.token
             }
@@ -36,7 +36,7 @@ const [blogs, setblogs] = useState([]);
 
     const handleDelete= async(ans)=>{
         console.log(ans._id)
-        let res=await axios.delete(`http://localhost:8080/posts/delete/${ans._id}`)
+        let res=await axios.delete(`https://blog-app-eza5.onrender.com/posts/delete/${ans._id}`)
         let data=res.data
         console.log(data)
         if(data.success){

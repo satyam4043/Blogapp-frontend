@@ -29,7 +29,7 @@ const Singup = () => {
       }
       // console.log(obj)
 
-      let res =await axios.post('http://localhost:8080/users/create',obj)
+      let res =await axios.post('https://blog-app-eza5.onrender.com/users/create',obj)
       console.log(res.data)
 
       if(res.data.success){

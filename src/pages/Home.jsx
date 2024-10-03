@@ -41,7 +41,7 @@ const Home = () => {
             file:data.data.secure_url
     }
 
-        let res=await axios.post('http://localhost:8080/posts/create',obj,{
+        let res=await axios.post('https://blog-app-eza5.onrender.com/posts/create',obj,{
         headers:{
           'Authorization':ctx.details.token
         }
