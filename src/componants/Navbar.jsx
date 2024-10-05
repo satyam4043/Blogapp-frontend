@@ -200,7 +200,7 @@ export default function Navbar() {
           </Typography>
           
   <Link className='' style={{textDecoration:"none",color:"white",fontSize:"25px",marginRight:"15px"}} to={"/"}><FaHome /></Link>
-          <Search>
+          <Search style={{marginLeft:"15px"}}>
             <SearchIconWrapper>
               <SearchIcon />
             </SearchIconWrapper>
