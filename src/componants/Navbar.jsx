@@ -17,6 +17,7 @@ import NotificationsIcon from '@mui/icons-material/Notifications';
 import MoreIcon from '@mui/icons-material/MoreVert';
 import { Link, Navigate, useNavigate } from 'react-router-dom';
 import UserContext from '../context/UserContext';
+import { FaHome } from "react-icons/fa";
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -143,7 +144,7 @@ export default function Navbar() {
           {/* <Badge badgeContent={4} color="error">
             <MailIcon />
           </Badge> */}
-            {login===true &&  <Link style={{textDecoration:"none",color:"black",fontSize:"15px"}} to={'/yourBlog'} >YourBlogs</Link>} 
+            {login===true &&  <Link style={{textDecoration:"none",color:"black",fontSize:"15px"}} to={'/yourBlog'} >YourPosts</Link>} 
         </IconButton>
         
       </MenuItem>
@@ -193,11 +194,12 @@ export default function Navbar() {
             component="div"
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
-             <Link style={{textDecoration:"none",color:"white"}} to={"/"}>Home</Link>
+            
+             <h3 style={{marginLeft:"15px",color:"red"}}>Twitter App</h3>
             
           </Typography>
           
-          <h3 style={{marginLeft:"15px",color:"red"}}>BlogsApp</h3>
+  <Link className='' style={{textDecoration:"none",color:"white"}} to={"/"}><FaHome /></Link>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
@@ -213,7 +215,7 @@ export default function Navbar() {
               {/* <Badge badgeContent={4} color="error">
                 <MailIcon />
               </Badge> */}
-       {login===true &&  <Link style={{textDecoration:"none",color:"white"}} to={'/yourBlog'} >YourBlogs</Link>} 
+       {login===true &&  <Link style={{textDecoration:"none",color:"white"}} to={'/yourBlog'} >YourPosts</Link>} 
             </IconButton>
             {/* <IconButton
               size="large"
