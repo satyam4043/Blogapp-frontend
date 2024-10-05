@@ -195,11 +195,11 @@ export default function Navbar() {
             sx={{ display: { xs: 'none', sm: 'block' } }}
           >
             
-             <h3 style={{marginLeft:"15px",color:"red"}}>Twitter App</h3>
+             <h3 style={{marginRight:"15px",color:"red",fontFamily:"fantasy"}}>Twitter App</h3>
             
           </Typography>
           
-  <Link className='' style={{textDecoration:"none",color:"white"}} to={"/"}><FaHome /></Link>
+  <Link className='' style={{textDecoration:"none",color:"white",fontSize:"25px"}} to={"/"}><FaHome /></Link>
           <Search>
             <SearchIconWrapper>
               <SearchIcon />
